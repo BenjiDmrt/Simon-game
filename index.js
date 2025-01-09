@@ -32,7 +32,7 @@ $(".btn").on("click", function(){
 })
 
 function playSound(name){
-    new Audio(`./sounds/${name}.mp3`).play();
+    new Audio(`sounds/${name}.mp3`).play();
 }
 function animatedPress(currentColor){
     $(`#${currentColor}`).addClass("pressed")
@@ -52,7 +52,7 @@ function checkAnswer(currentLevel){
     
     else{
         console.log("wrong");
-        new Audio(`./sounds/wrong.mp3`).play();
+        new Audio(`sounds/wrong.mp3`).play();
         document.body.classList.add("game-over")
         setTimeout(function(){
             document.body.classList.remove("game-over");}, 200);
